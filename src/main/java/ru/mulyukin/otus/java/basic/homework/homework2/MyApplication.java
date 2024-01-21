@@ -8,8 +8,8 @@ public class MyApplication {
         acceptNumberAntWord(1, "Otus");
         sumArray(3, 6, 89, 9, 3, 4, 6);
         fillingArray(4, new int[10]);
-        increaseTheNumber(2, 4,4,3,1,2,7,0,7,5,-4 );
-        sumHalfPastArray(3,109,5,9,1,6,9,5,8,4);
+        increaseTheNumber(2, 4, 4, 3, 1, 2, 7, 0, 7, 5, -4);
+        sumHalfPastArray(3, 109, 5, 9, 1, 6, 9, 5, 8, 4);
     }
 
     public static void acceptNumberAntWord(int a, String b) {
@@ -34,13 +34,15 @@ public class MyApplication {
         }
         System.out.println(Arrays.toString(arr));
     }
-    public static void increaseTheNumber (int a, int ... arr){
+
+    public static void increaseTheNumber(int a, int... arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] += a;
         }
         System.out.println(Arrays.toString(arr));
     }
-    public static void sumHalfPastArray(int ... arr){
+
+    public static void sumHalfPastArray(int... arr) {
         int sum = 0;
         int sum1 = 0;
         for (int i = 0; i < arr.length / 2; i++) {
@@ -48,9 +50,10 @@ public class MyApplication {
         }
         for (int i = arr.length / 2; i < arr.length; i++) {
             sum1 += arr[i];
-        }if (sum > sum1){
+        }
+        if (sum > sum1) {
             System.out.println("Сумма левой половины " + "= " + sum);
-        }else {
+        } else {
             System.out.println("Сумма правой половины " + "= " + sum1);
         }
 
