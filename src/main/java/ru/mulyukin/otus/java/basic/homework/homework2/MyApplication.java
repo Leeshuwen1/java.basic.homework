@@ -10,6 +10,8 @@ public class MyApplication {
         fillingArray(4, new int[10]);
         increaseTheNumber(2, 4, 4, 3, 1, 2, 7, 0, 7, 5, -4);
         sumHalfPastArray(3, 109, 5, 9, 1, 6, 9, 5, 8, 4);
+        sumSomeArrays();
+
     }
 
     public static void acceptNumberAntWord(int a, String b) {
@@ -58,4 +60,19 @@ public class MyApplication {
         }
 
     }
+
+    public static void sumSomeArrays() {
+        int[] arr = {2, 4, 5, 6};
+        int[] arr1 = {3, 5, 8, 9};
+        int[] arr3 = {2, 3, 5, 1};
+        int[] sumArrays = new int[arr.length];
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sumArrays[i] = arr[i] + arr1[i] + arr3[i];
+            sum += sumArrays[i];
+        }
+        System.out.println(Arrays.toString(sumArrays));
+        System.out.println(sum);
+    }
+
 }
