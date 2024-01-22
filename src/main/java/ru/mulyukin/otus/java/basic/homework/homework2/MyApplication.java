@@ -5,12 +5,8 @@ import java.util.Arrays;
 public class MyApplication {
     public static void main(String[] args) {
 
-        acceptNumberAntWord(1, "Otus");
-        sumArray(3, 6, 89, 9, 3, 4, 6);
-        fillingArray(4, new int[10]);
-        increaseTheNumber(2, 4, 4, 3, 1, 2, 7, 0, 7, 5, -4);
-        sumHalfPastArray(3, 109, 5, 9, 1, 6, 9, 5, 8, 4);
-        sumSomeArrays();
+//
+        coupArray(1,2,3,4);
 
     }
 
@@ -73,6 +69,15 @@ public class MyApplication {
         }
         System.out.println(Arrays.toString(sumArrays));
         System.out.println(sum);
+    }
+    public static void coupArray(int...arr){
+        int cout = 0;
+        for (int i = 0; i < arr.length / 2; i++) {
+            cout = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = cout;
+
+        }System.out.println(Arrays.toString(arr));
     }
 
 }
