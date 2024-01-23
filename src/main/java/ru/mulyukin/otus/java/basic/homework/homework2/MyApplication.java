@@ -5,8 +5,7 @@ import java.util.Arrays;
 public class MyApplication {
     public static void main(String[] args) {
 
-//
-        coupArray(1,2,3,4);
+        pointStop(2,3,5,5,3,2);
 
     }
 
@@ -79,5 +78,18 @@ public class MyApplication {
 
         }System.out.println(Arrays.toString(arr));
     }
+    public static void pointStop(int ... arr){
+        int sumlLeftSide = 0;
+        int sumrRgthSide = 0;
+        for (int i = 0; i < arr.length; i++) {
+                sumrRgthSide+= arr[i];
+                if (sumrRgthSide == sumlLeftSide){
+                }for (int j = arr.length - 1; j >= 0  ; j--) {
+                sumlLeftSide+= arr[j];
+            }
+        }System.out.println("Point " + sumrRgthSide + " = " + sumlLeftSide);
+    }
 
-}
+    }
+
+
