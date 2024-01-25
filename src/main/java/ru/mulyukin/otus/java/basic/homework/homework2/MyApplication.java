@@ -6,7 +6,8 @@ public class MyApplication {
     public static void main(String[] args) {
 
 
-        minMaxArray(1,5,3,78);
+        minArray(2, 5, 3, 78);
+        maxArray(2, 5, 3, 78);
 
     }
 
@@ -82,23 +83,49 @@ public class MyApplication {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void minMaxArray(int ... arr) {
-        int max = arr[0];
-        for (int i = 0;i < arr.length ; i++) {
-            if(arr[i] > max){
-                max = arr[i];
+    public static void minArray(int... arr) {
+        boolean sorted = false;
+        int min;
+        int max;
+        while (!sorted) {
+            sorted = true;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    min = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = min;
+                    sorted = false;
+                }
             }
-
-        }
-        System.out.println(max);
-        int min = arr[0];
-        for (int i = 0;i < arr.length ; i++) {
-            if(arr[i] < max){
-                max = arr[i];
-            }
-        }System.out.println(min);
+        }System.out.println(Arrays.toString(arr));
     }
-}
+
+
+            public static void maxArray ( int...arr){
+                boolean sorted = false;
+                int max;
+                while (!sorted) {
+                    sorted = true;
+                    for (int j = 0; j < arr.length - 1; j++) {
+                        if (arr[j] < arr[j + 1]) {
+                            max = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = max;
+                            sorted = false;
+                        }
+                    }
+
+                }
+                System.out.println(Arrays.toString(arr));
+            }
+        }
+
+
+
+
+
+
+
 
 
 
