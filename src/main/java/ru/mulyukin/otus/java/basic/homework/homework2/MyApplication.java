@@ -6,8 +6,7 @@ public class MyApplication {
     public static void main(String[] args) {
 
 
-        minArray(2, 5, 3, 78);
-        maxArray(2, 5, 3, 78);
+       sumSomeArrays();
 
     }
 
@@ -59,13 +58,12 @@ public class MyApplication {
     }
 
     public static void sumSomeArrays() {
-        int[] arr = {2, 4, 5, 6};
+        int[] arr = {2, 4, 5};
         int[] arr1 = {3, 5, 8, 9};
-        int[] arr3 = {2, 3, 5, 1};
         int[] sumArrays = new int[arr.length];
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sumArrays[i] = arr[i] + arr1[i] + arr3[i];
+        for (int i = 0; i < Integer.min(arr.length, arr1.length); i++) {
+            sumArrays[i] = arr[i] + arr1[i];
             sum += sumArrays[i];
         }
         System.out.println(Arrays.toString(sumArrays));
@@ -86,7 +84,6 @@ public class MyApplication {
     public static void minArray(int... arr) {
         boolean sorted = false;
         int min;
-        int max;
         while (!sorted) {
             sorted = true;
             for (int i = 0; i < arr.length - 1; i++) {
