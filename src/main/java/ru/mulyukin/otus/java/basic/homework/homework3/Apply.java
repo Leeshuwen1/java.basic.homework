@@ -1,32 +1,24 @@
 package ru.mulyukin.otus.java.basic.homework.homework3;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
-import java.util.Random;
-
 public class Apply {
     public static void main(String[] args) {
 
         int[][] arr = {{2, 59, 6}, {-9, 8, 13}, {1, 5, 1}};
 
-//        print(arr);
-//        System.out.println();
-//        System.out.println(sumPositiveElements(arr));
-//
-//        System.out.println();
-//        square(10);
+        print(arr);
+        System.out.println(sumPositiveElements(arr));
+
+        square(10);
 
 //        System.out.println();
 //        zeroingDiagonal(arr);
 //        print(arr);
 
-//        System.out.println();
-//        print(arr);
-//        System.out.println(findMax(arr));
+        print(arr);
+        System.out.println(findMax(arr));
 
         print(arr);
         System.out.println(sumSecondLine(arr));
-
 
     }
 
@@ -95,12 +87,10 @@ public class Apply {
             for (int j = 0; j < arr[i].length; j++) {
                 if (i == 2) {
                     sum += arr[2][j];
-                } else if (i != 2) {
-                    return -1;
                 }
             }
-
-        }return sum;
+        }
+        return sum;
     }
 }
 
