@@ -1,7 +1,5 @@
 package ru.mulyukin.otus.java.basic.homework.homework3;
 
-import java.sql.SQLOutput;
-
 public class Apply {
     public static void main(String[] args) {
 
@@ -50,57 +48,55 @@ public class Apply {
     }
 
 
+    public static int zeroingDiagonal(int[][] arr) {
+        int zero = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (i == j || i + j == arr.length - 1) {
+                    arr[i][j] = zero;
 
-
-
-        public static int zeroingDiagonal ( int[][] arr){
-            int zero = 0;
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (i == j || i + j == arr.length - 1) {
-                        arr[i][j] = zero;
-
-                    }
                 }
-            }
-            return zero;
-        }
-
-        public static void print ( int[][] arr){
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + " ");
-                }
-                System.out.println();
             }
         }
-//
-        public static int findMax ( int[][] arr){
-            int max = 0;
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (arr[i][j] > max) {
-                        max = arr[i][j];
-                    }
-                }
-            }
-            return max;
-        }
+        return zero;
+    }
 
-        public static int sumSecondLine ( int[][] arr){
-            int sum = 0;
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (arr.length < 2) {
-                        return -1;
-                    }else if (i == 2){
-                        sum += arr[1][j];
-                    }
-                }
+    public static void print(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
             }
-            return sum;
+            System.out.println();
         }
     }
+
+
+    public static int findMax(int[][] arr) {
+        int max = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+    public static int sumSecondLine(int[][] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr.length < 2) {
+                    return -1;
+                } else if (i == 2) {
+                    sum += arr[1][j];
+                }
+            }
+        }
+        return sum;
+    }
+}
 
 
 
