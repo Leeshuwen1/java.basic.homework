@@ -39,13 +39,14 @@ public class Apply {
             for (int j = 0; j < arr[i].length; j++) {
                 if (i == 0 || j == 0 || i == arr.length - 1 || j == arr.length - 1) {
                     System.out.print("*");
+                } else {
+                    System.out.print(" ");
                 }
-                System.out.print(" ");
             }
             System.out.println();
         }
-
     }
+
 
     public static int zeroingDiagonal(int[][] arr) {
         int zero = 0;
@@ -53,7 +54,7 @@ public class Apply {
             for (int j = 0; j < arr[i].length; j++) {
                 if (i == j || i + j == arr.length - 1) {
                     arr[i][j] = zero;
-                    ;
+
                 }
             }
         }
@@ -68,6 +69,7 @@ public class Apply {
             System.out.println();
         }
     }
+
 
     public static int findMax(int[][] arr) {
         int max = 0;
@@ -85,14 +87,18 @@ public class Apply {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                if (i == 2) {
-                    sum += arr[2][j];
+                if (arr.length < 2) {
+                    return -1;
+                } else if (i == 2) {
+                    sum += arr[1][j];
                 }
             }
         }
         return sum;
     }
 }
+
+
 
 
 
