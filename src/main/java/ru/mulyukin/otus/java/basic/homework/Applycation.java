@@ -25,6 +25,12 @@ public class Applycation {
 
         Box box = new Box(10, "Yellow");
         box.info();
+        box.put("Ролики");
+        box.info();
+        box.setColor("Green");
+        box.info();
+        box.setSize(9);
+        box.info();
 
 
 
