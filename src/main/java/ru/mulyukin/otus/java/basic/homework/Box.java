@@ -45,5 +45,8 @@ public class Box {
         }
         return item;
     }
+    public String putAway(String item){
+        return item;
+    }
 }
 
