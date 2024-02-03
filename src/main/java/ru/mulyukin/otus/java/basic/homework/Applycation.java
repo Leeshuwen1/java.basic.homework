@@ -2,8 +2,6 @@ package ru.mulyukin.otus.java.basic.homework;
 
 import ru.mulyukin.otus.java.basic.homework.homework4.User;
 
-import java.net.UnknownServiceException;
-
 public class Applycation {
     public static void main(String[] args) {
         User[] user = {
@@ -18,13 +16,21 @@ public class Applycation {
                 new User("Kriumskiy", "Matis", "Alexseevich", 2020, "pesel@gmail.com"),
                 new User("Shevchenko", "Alexsander", "Igorevich", 1946, "onlywar@yandex.ru")
         };
-        for (int i = 0; i < user.length; i++) {
-            if (user[i].getYearOfBirth()<1984){
-                user[i].userInformation();
-            }
-            }
+//        for (int i = 0; i < user.length; i++) {
+//            if (user[i].getYearOfBirth() < 1984) {
+//                user[i].userInformation();
+//            }
+//        }
+
+
+        Box box = new Box(10, "Yellow");
+        box.info();
+
+
         }
 
     }
+
+
 
 
