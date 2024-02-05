@@ -16,21 +16,31 @@ public class Applycation {
                 new User("Kriumskiy", "Matis", "Alexseevich", 2020, "pesel@gmail.com"),
                 new User("Shevchenko", "Alexsander", "Igorevich", 1946, "onlywar@yandex.ru")
         };
-//        for (int i = 0; i < user.length; i++) {
-//            if (user[i].getYearOfBirth() < 1984) {
-//                user[i].userInformation();
-//            }
-//        }
+        for (int i = 0; i < user.length; i++) {
+            if (user[i].getYearOfBirth() < 1984) {
+                user[i].userInformation();
+            }
+        }
 
 
-        Box box = new Box(10, "Yellow");
+        Box box = new Box(10, 10, 10,  "Green");
+        box.close();
+        box.open();
+        box.put("Pen");
         box.info();
-        box.put("Ролики");
+        box.putAway("Pen");
         box.info();
-        box.setColor("Green");
+        box.close();
+        box.setColor("Yellow");
         box.info();
-        box.setSize(9);
+        box.setSize1(14);
         box.info();
+
+
+
+
+
+
 
 
 
