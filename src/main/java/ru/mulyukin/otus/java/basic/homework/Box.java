@@ -11,6 +11,7 @@ public class Box {
     public int getSize1() {
         return size1;
     }
+
     public int getSize2() {
         return size2;
     }
@@ -32,11 +33,13 @@ public class Box {
             this.size1 = size;
         }
     }
+
     public void setSize2(int size) {
         if (size != size) {
             this.size2 = size;
         }
     }
+
     public void setSize(int size) {
         if (size != size) {
             this.size = size;
@@ -76,7 +79,7 @@ public class Box {
         for (int i = 0; i < box.length; i++) {
             if (box[i] != null) {
                 System.out.println("Коробка закрыта " + box[i]);
-            }else {
+            } else {
                 System.out.println("Коробка закрыта, откройте коробку ");
             }
         }
@@ -96,7 +99,7 @@ public class Box {
 
     public String putAway(String item) {
         for (int i = 0; i < box.length; i++) {
-            if(item.equals(box[i])){
+            if (item.equals(box[i])) {
                 box[i] = null;
                 System.out.println("Из коробки взяли предмет");
 

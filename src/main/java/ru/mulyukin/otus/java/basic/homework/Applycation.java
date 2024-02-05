@@ -23,7 +23,7 @@ public class Applycation {
         }
 
 
-        Box box = new Box(10, 10, 10,  "Green");
+        Box box = new Box(10, 10, 10, "Green");
         box.close();
         box.open();
         box.put("Pen");
@@ -35,13 +35,6 @@ public class Applycation {
         box.info();
         box.setSize1(14);
         box.info();
-
-
-
-
-
-
-
 
 
     }
