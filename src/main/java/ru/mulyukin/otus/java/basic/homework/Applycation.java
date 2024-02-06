@@ -1,6 +1,9 @@
 package ru.mulyukin.otus.java.basic.homework;
 
+import ru.mulyukin.otus.java.basic.homework.homework4.Box;
 import ru.mulyukin.otus.java.basic.homework.homework4.User;
+
+import java.util.Scanner;
 
 public class Applycation {
     public static void main(String[] args) {
@@ -23,23 +26,16 @@ public class Applycation {
         }
 
 
-        Box box = new Box(10, 10, 10, "Green");
-        box.close();
-        box.open();
-        box.put("Pen");
-        box.info();
-        box.putAway("Pen");
-        box.info();
-        box.close();
-        box.setColor("Yellow");
-        box.info();
-        box.setSize1(14);
-        box.info();
+        Box box = new Box(10, 10, 10, "Green", 'y', 'y');
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Коробка закрыта: выберите y или n");
+        char choiceUser = scanner.next().charAt(0);
+        box.openBox(choiceUser);
 
 
     }
-
 }
+
 
 
 
