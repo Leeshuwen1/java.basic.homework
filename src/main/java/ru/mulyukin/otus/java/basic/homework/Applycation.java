@@ -26,13 +26,17 @@ public class Applycation {
         }
 
 
-        Box box = new Box(10, 10, 10, "Green", 'y', 'y');
+        Box box = new Box(10, 10, 10, "Green");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Коробка закрыта: выберите y или n");
         char choiceUser = scanner.next().charAt(0);
-        box.openBox(choiceUser);
-
-
+        if (choiceUser == 'y') {
+        } else {
+            box.close();
+        }
+        box.open();
+        box.put("book");
+        box.putAway();
 
     }
 }
