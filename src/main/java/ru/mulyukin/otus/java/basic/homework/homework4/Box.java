@@ -40,7 +40,7 @@ public class Box {
     }
 
     public void setFilled() {
-        this.filled = filled;
+        this.filled = false;
     }
 
     public void setColor(String color) {
@@ -74,9 +74,10 @@ public class Box {
 
 
     public void put(String item) {
+
         if (this.open) {
             this.filled = true;
-            System.out.println("В коробку положили " + item);
+            System.out.println("В коробке лежит " + item + ',' + " нельзя ни чего положить");
         } else {
             System.out.println("Коробка закрыта! Положить ничего нельзя.");
         }
@@ -88,7 +89,6 @@ public class Box {
             if (this.filled) {
                 this.filled = false;
                 System.out.println("Из коробки взяли предмет");
-
             } else {
                 System.out.println("В коробке ничего нет!");
             }

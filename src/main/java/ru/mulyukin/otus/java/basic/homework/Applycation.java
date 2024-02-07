@@ -34,12 +34,11 @@ public class Applycation {
         } else {
             box.close();
         }
-        box.open();
-        box.put("book");
-        box.putAway();
 
     }
+
 }
+
 
 
 
