@@ -30,14 +30,28 @@ public class Applycation {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Коробка закрыта: выберите y или n");
         char choiceUser = scanner.next().charAt(0);
+        String result = null;
         if (choiceUser == 'y') {
-        } else {
-            box.close();
+            box.open();
+            if (box.notFilled()) {
+                System.out.println("Вы можете положить в коробку");
+                String item = scanner.next();
+                box.put(item);
+                result = String.format(item);
+            }else if (result != null) {
+                    box.filled();
+                    System.out.println("Уберите предмет из коробки");
+                    box.putAway();
+                }
+            } else {
+                box.close();
+            }
         }
-
     }
 
-}
+
+
+
 
 
 

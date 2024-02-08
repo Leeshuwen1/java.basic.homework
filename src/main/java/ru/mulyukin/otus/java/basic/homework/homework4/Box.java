@@ -66,6 +66,15 @@ public class Box {
         System.out.println("Коробка открыта ");
     }
 
+    public boolean notFilled(){
+        this.filled = true;
+        return true;
+    }
+
+    public boolean filled() {
+        this.filled = false;
+        return false;
+    }
 
     public void close() {
         this.open = false;
@@ -74,12 +83,11 @@ public class Box {
 
 
     public void put(String item) {
-
         if (this.open) {
             this.filled = true;
-            System.out.println("В коробке лежит " + item + ',' + " нельзя ни чего положить");
+            System.out.println("В коробку положили " + item );
         } else {
-            System.out.println("Коробка закрыта! Положить ничего нельзя.");
+            System.out.println("В коробке что-то лежит ");
         }
     }
 
