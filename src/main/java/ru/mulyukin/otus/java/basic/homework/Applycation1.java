@@ -5,7 +5,7 @@ import ru.mulyukin.otus.java.basic.homework.homework4.User;
 
 import java.util.Scanner;
 
-public class Applycation {
+public class Applycation1 {
     public static void main(String[] args) {
         User[] user = {
                 new User("Mulyukin", "Alexsey", "Vladimirovich", 1986, "adiott52@gmail.com"),
