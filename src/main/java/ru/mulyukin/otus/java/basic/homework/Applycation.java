@@ -23,7 +23,7 @@ public class Applycation {
 
 
         cat.info();
-        cat.run(50);
+        cat.run(40);
         dog.info();
         dog.run(50);
         horse.info();
