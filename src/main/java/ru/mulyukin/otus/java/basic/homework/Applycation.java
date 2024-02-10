@@ -19,7 +19,7 @@ public class Applycation {
         cat.info();
         cat.swim(4);
         horse.info();
-        horse.swim(600);
+        horse.swim(500);
 
 
         cat.info();
