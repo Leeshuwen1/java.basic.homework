@@ -1,5 +1,10 @@
 package ru.mulyukin.otus.java.basic.homework;
 
+import ru.mulyukin.otus.java.basic.homework.homework4.Box;
+import ru.mulyukin.otus.java.basic.homework.homework4.User;
+
+import java.util.Scanner;
+
 import ru.mulyukin.otus.java.basic.homework.homework5.Animal;
 import ru.mulyukin.otus.java.basic.homework.homework5.Cat;
 import ru.mulyukin.otus.java.basic.homework.homework5.Dog;
@@ -30,3 +35,13 @@ public class Applycation {
         horse.run(500);
     }
 }
+
+
+
+
+
+
+
+
+
+
