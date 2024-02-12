@@ -26,7 +26,7 @@ public class Applycation1 {
         }
 
 
-        Box box = new Box(10, 10, 10, "Green");
+        Box box = new Box(15, 10, 10, "Green");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Коробка закрыта: выберите y или n");
         char choiceUser = scanner.next().charAt(0);
