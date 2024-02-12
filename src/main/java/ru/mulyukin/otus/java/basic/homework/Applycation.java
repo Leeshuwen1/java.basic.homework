@@ -17,7 +17,7 @@ public class Applycation {
         dog.info();
         dog.swim(1100);
         cat.info();
-        cat.swim(4);
+        cat.swim(40);
         horse.info();
         horse.swim(400);
 
